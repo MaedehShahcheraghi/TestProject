@@ -9,22 +9,25 @@ using TP.Domain;
 
 namespace TP.Persistence
 {
-    internal class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        private readonly TestProjectDbConext _testProjectDbContext;
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, TestProjectDbConext testProjectDbContext)
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-            _testProjectDbContext = testProjectDbContext;
-        }
 
+        } 
+        #region Product Dbset
+        public DbSet<Product> Products { get; set; }
+        #endregion
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
 
             base.OnModelCreating(modelBuilder);
-           
+
         }
 
         #region SaveChangesConfiguration
@@ -57,9 +60,8 @@ namespace TP.Persistence
         }
         #endregion
 
-        #region dbsets
-        public DbSet<Product> Products => _testProjectDbContext.Products;
-        #endregion
+
+
 
     }
 }

@@ -13,3 +13,4 @@ C:\Users\ASUS\source\repos\Testproject\TP.Application\bin\Debug\net8.0\TP.Domain
 C:\Users\ASUS\source\repos\Testproject\TP.Application\bin\Debug\net8.0\TP.Domain.pdb
 C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.csproj.AssemblyReference.cache
 C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Appli.A659B0D0.Up2Date
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.sourcelink.json

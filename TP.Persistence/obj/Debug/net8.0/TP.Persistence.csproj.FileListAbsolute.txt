@@ -15,3 +15,4 @@ C:\Users\ASUS\source\repos\Testproject\TP.Persistence\obj\Debug\net8.0\TP.Persis
 C:\Users\ASUS\source\repos\Testproject\TP.Persistence\obj\Debug\net8.0\refint\TP.Persistence.dll
 C:\Users\ASUS\source\repos\Testproject\TP.Persistence\obj\Debug\net8.0\TP.Persistence.pdb
 C:\Users\ASUS\source\repos\Testproject\TP.Persistence\obj\Debug\net8.0\ref\TP.Persistence.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Persistence\obj\Debug\net8.0\TP.Persistence.sourcelink.json

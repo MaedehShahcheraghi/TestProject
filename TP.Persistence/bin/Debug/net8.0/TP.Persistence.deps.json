@@ -846,6 +846,7 @@
           "FluentValidation.DependencyInjectionExtensions": "11.11.0",
           "MediatR": "12.4.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
           "System.ComponentModel.Annotations": "5.0.0",
           "TP.Domain": "1.0.0"
         },
