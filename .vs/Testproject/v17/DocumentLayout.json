@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Testproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.persistence\\persistenceservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|solutionrelative:tp.persistence\\persistenceservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.persistence\\testprojectdbconext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|solutionrelative:tp.persistence\\testprojectdbconext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926AC439-B946-4941-82DB-DCBC18CEA7C7}|TP.Domain\\TP.Domain.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926AC439-B946-4941-82DB-DCBC18CEA7C7}|TP.Domain\\TP.Domain.csproj|solutionrelative:tp.domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.persistence\\configurations\\entitiesconfiguration\\userroleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|solutionrelative:tp.persistence\\configurations\\entitiesconfiguration\\userroleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.persistence\\configurations\\entitiesconfiguration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|solutionrelative:tp.persistence\\configurations\\entitiesconfiguration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.persistence\\configurations\\entitiesconfiguration\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|solutionrelative:tp.persistence\\configurations\\entitiesconfiguration\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926AC439-B946-4941-82DB-DCBC18CEA7C7}|TP.Domain\\TP.Domain.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926AC439-B946-4941-82DB-DCBC18CEA7C7}|TP.Domain\\TP.Domain.csproj|solutionrelative:tp.domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.persistence\\applicationdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|solutionrelative:tp.persistence\\applicationdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926AC439-B946-4941-82DB-DCBC18CEA7C7}|TP.Domain\\TP.Domain.csproj|c:\\users\\asus\\source\\repos\\testproject\\tp.domain\\tp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{926AC439-B946-4941-82DB-DCBC18CEA7C7}|TP.Domain\\TP.Domain.csproj|solutionrelative:tp.domain\\tp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1337924956:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Domain\\Product.cs",
+              "RelativeDocumentMoniker": "TP.Domain\\Product.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Domain\\Product.cs",
+              "RelativeToolTip": "TP.Domain\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:31:09.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRoleConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\UserRoleConfiguration.cs",
+              "RelativeDocumentMoniker": "TP.Persistence\\Configurations\\EntitiesConfiguration\\UserRoleConfiguration.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\UserRoleConfiguration.cs",
+              "RelativeToolTip": "TP.Persistence\\Configurations\\EntitiesConfiguration\\UserRoleConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:31:00.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "RelativeToolTip": "TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAcAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:30:43.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\ProductConfiguration.cs",
+              "RelativeDocumentMoniker": "TP.Persistence\\Configurations\\EntitiesConfiguration\\ProductConfiguration.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\ProductConfiguration.cs",
+              "RelativeToolTip": "TP.Persistence\\Configurations\\EntitiesConfiguration\\ProductConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:26:26.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Domain\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "TP.Domain\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Domain\\ApplicationUser.cs",
+              "RelativeToolTip": "TP.Domain\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T19:54:32.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestProjectDbConext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\TestProjectDbConext.cs",
+              "RelativeDocumentMoniker": "TP.Persistence\\TestProjectDbConext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\TestProjectDbConext.cs",
+              "RelativeToolTip": "TP.Persistence\\TestProjectDbConext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T19:51:28.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TP.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Domain\\TP.Domain.csproj",
+              "RelativeDocumentMoniker": "TP.Domain\\TP.Domain.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Domain\\TP.Domain.csproj",
+              "RelativeToolTip": "TP.Domain\\TP.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-21T19:50:25.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext .cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\ApplicationDbContext .cs",
+              "RelativeDocumentMoniker": "TP.Persistence\\ApplicationDbContext .cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\ApplicationDbContext .cs",
+              "RelativeToolTip": "TP.Persistence\\ApplicationDbContext .cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T19:48:35.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersistenceServicesRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\PersistenceServicesRegistration.cs",
+              "RelativeDocumentMoniker": "TP.Persistence\\PersistenceServicesRegistration.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Testproject\\TP.Persistence\\PersistenceServicesRegistration.cs",
+              "RelativeToolTip": "TP.Persistence\\PersistenceServicesRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T19:47:28.839Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

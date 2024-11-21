@@ -1,0 +1,12 @@
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\bin\Debug\net8.0\TP.Domain.deps.json
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\bin\Debug\net8.0\TP.Domain.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\bin\Debug\net8.0\TP.Domain.pdb
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\TP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\TP.Domain.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\TP.Domain.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\TP.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\TP.Domain.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\refint\TP.Domain.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\TP.Domain.pdb
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\ref\TP.Domain.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Domain\obj\Debug\net8.0\TP.Domain.csproj.AssemblyReference.cache

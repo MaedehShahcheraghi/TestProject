@@ -1,0 +1,15 @@
+C:\Users\ASUS\source\repos\Testproject\TP.Application\bin\Debug\net8.0\TP.Application.deps.json
+C:\Users\ASUS\source\repos\Testproject\TP.Application\bin\Debug\net8.0\TP.Application.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Application\bin\Debug\net8.0\TP.Application.pdb
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\refint\TP.Application.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.pdb
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\ref\TP.Application.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Application\bin\Debug\net8.0\TP.Domain.dll
+C:\Users\ASUS\source\repos\Testproject\TP.Application\bin\Debug\net8.0\TP.Domain.pdb
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Application.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\Testproject\TP.Application\obj\Debug\net8.0\TP.Appli.A659B0D0.Up2Date
