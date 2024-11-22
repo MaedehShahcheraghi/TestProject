@@ -258,7 +258,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "a88fe82a-c55a-42ca-b390-ad5337bdb23b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "aa58a1ee-ddd7-4bec-8f1c-59e3bd47f5e2",
+                            ConcurrencyStamp = "f316c64c-9ee1-4e52-8179-8a9b95d7699e",
                             Email = "Admin@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "Admin",
@@ -266,9 +266,9 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEASXVtAIIgOWuZvp6R6M3goJEirqEHonFkmtG+2kTVqbsQ2hbjExO5IEVqJxiY9BFQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEVwv29VVQXc16V5EWJTJ0R3IvzduZO2IW03YSo9HMDLEGTG/FjUdIeJZeWWaId37w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "641e9891-cba9-4aad-b686-674d502ec402",
+                            SecurityStamp = "72742f41-9593-401d-ab42-ce886bbfb476",
                             TwoFactorEnabled = false,
                             UserName = "Admin@localhost.com"
                         },
@@ -276,7 +276,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "80d5b3db-6a01-4dcb-98d0-23f4d5e36b41",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c61ddc50-5690-4894-98d7-c652d15948a2",
+                            ConcurrencyStamp = "07f4a94d-17c3-4cd2-9b52-20dc0a59532b",
                             Email = "User@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "System",
@@ -284,9 +284,9 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAy/XpRIq97BufhhwB0g6hLWG4EaZFoTEPkldbKG4MmxrxYbQ1ncBb4dXM0BOefJ5w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELMay2qkK642KRBgdUUfWDo9XSa1Ue98Ojx1/XaFP95VPWB+FwV1zYdPWuuOburVdQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7cd1247-f171-4a29-9400-46084ef33a3c",
+                            SecurityStamp = "dba01bd8-2ad2-49c2-9ca2-96cbbc682cd7",
                             TwoFactorEnabled = false,
                             UserName = "User@localhost.com"
                         });
@@ -301,6 +301,7 @@ namespace TP.Persistence.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("DateCreated")
@@ -317,15 +318,18 @@ namespace TP.Persistence.Migrations
 
                     b.Property<string>("ManufactureEmail")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("ManufacturePhone")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("ProduceDate")
                         .HasColumnType("datetime2");
@@ -334,7 +338,36 @@ namespace TP.Persistence.Migrations
 
                     b.HasIndex("CreatedBy");
 
+                    b.HasIndex("ManufactureEmail", "ProduceDate")
+                        .IsUnique();
+
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedBy = "a88fe82a-c55a-42ca-b390-ad5337bdb23b",
+                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsAvailable = true,
+                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManufactureEmail = "maedeh.shahcheraghi1384@gmail.com",
+                            ManufacturePhone = "09925772866",
+                            Name = "Product 1",
+                            ProduceDate = new DateTime(2024, 11, 22, 18, 47, 2, 176, DateTimeKind.Local).AddTicks(7064)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedBy = "80d5b3db-6a01-4dcb-98d0-23f4d5e36b41",
+                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsAvailable = true,
+                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManufactureEmail = "maedeh.shahcheraghi2005@gmail.com",
+                            ManufacturePhone = "09925772867",
+                            Name = "Product 2",
+                            ProduceDate = new DateTime(2024, 11, 22, 18, 47, 2, 176, DateTimeKind.Local).AddTicks(7084)
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -392,7 +425,9 @@ namespace TP.Persistence.Migrations
                 {
                     b.HasOne("TP.Domain.ApplicationUser", "ApplicationUser")
                         .WithMany("Products")
-                        .HasForeignKey("CreatedBy");
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("ApplicationUser");
                 });

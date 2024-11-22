@@ -2,7 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TP.Application.Contracts.Persistence;
 using TP.Domain;
+using TP.Persistence.Repsotitories;
 
 namespace TP.Persistence
 {
@@ -12,12 +14,18 @@ namespace TP.Persistence
         {
 
             //Add DbContext
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("TestProjectConnectionString")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
+            //Add DI
+
+            services.AddScoped(typeof(IGenericRepository<>),typeof(IGenericRepository<>));
+            services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
 
             return services;
         }
