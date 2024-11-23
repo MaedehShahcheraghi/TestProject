@@ -51,7 +51,7 @@ namespace TP.Persistence.Repsotitories
             return await query.ToListAsync();
         }
 
-        public async Task<T> GetAsync(int id)
+        public async Task<T> GetAsync(object id)
         {
             var enetity = await _dbSet.FindAsync(id);
             return enetity;

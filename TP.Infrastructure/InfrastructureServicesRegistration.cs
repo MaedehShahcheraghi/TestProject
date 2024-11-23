@@ -4,6 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TP.Application;
+using TP.Application.Contracts.Infrastructure.AccountSerivce;
+using TP.Application.Contracts.Persistence;
+using TP.Infrastructure.Service;
 
 namespace TP.Infrastructure
 {
@@ -11,10 +14,15 @@ namespace TP.Infrastructure
     {
         public static IServiceCollection ConfigureInfrastractureServices(this IServiceCollection services, IConfiguration configuration)
         {
+          
+            
             //AddJwtSetting
 
             services.Configure<JWTSetting>(configuration.GetSection("JwtSetting"));
 
+            //Add DI
+
+            services.AddScoped(typeof(IAuthService), typeof(AuthService));
 
 
             //AddAuthentication

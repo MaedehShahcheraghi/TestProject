@@ -7,7 +7,7 @@ using TP.Application.Dtos.CommonDtos;
 
 namespace TP.Application.Dtos.ProductDtos
 {
-    public class CreateProductDto:BaseDto,IProductDto
+    public class CreateProductDto:IProductDto
     {
         public string Name { get; set; }
         public DateTime ProduceDate { get; set; }

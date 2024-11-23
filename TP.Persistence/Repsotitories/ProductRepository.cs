@@ -23,7 +23,7 @@ namespace TP.Persistence.Repsotitories
             return await _dbContext.Products.Where(c=> c.ManufactureEmail==manufactureEmail && c.ProduceDate==produceDate).AnyAsync();
         }
 
-        public async Task<IReadOnlyList<Product>> GetProductsByOwnerId(string createBy)
+        public async Task<IReadOnlyList<Product>> GetProductsByOwnerId(string? createBy)
         {
             IQueryable<Product> result =  _dbContext.Products;
             if (!string.IsNullOrEmpty(createBy))

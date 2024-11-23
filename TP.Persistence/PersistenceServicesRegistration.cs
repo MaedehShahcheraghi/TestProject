@@ -24,8 +24,9 @@ namespace TP.Persistence
 
             //Add DI
 
-            services.AddScoped(typeof(IGenericRepository<>),typeof(IGenericRepository<>));
+            services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
+            services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 
             return services;
         }

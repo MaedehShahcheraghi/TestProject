@@ -25,7 +25,7 @@ namespace TP.Application.Dtos.ProductDtos.ProductValidation
              .MaximumLength(100).WithMessage("{PropertyName} must not exceed 100");
 
 
-            RuleFor(p => p.ManufactureEmail).NotEmpty().WithMessage("{PropertyName} is required.")
+            RuleFor(p => p.ManufacturePhone).NotEmpty().WithMessage("{PropertyName} is required.")
             .NotNull()
             .MaximumLength(15).WithMessage("{PropertyName} must not exceed 15");
 
@@ -33,10 +33,10 @@ namespace TP.Application.Dtos.ProductDtos.ProductValidation
             RuleFor(p => new { p.ManufactureEmail, p.ProduceDate })
               .MustAsync(async (data, token) =>
                  {
-                       var productexist = await _productRepository.ExistProductByEmailandPrdouctDate(data.ManufactureEmail, data.ProduceDate);
-                        return !productexist;
+                     var productexist = await _productRepository.ExistProductByEmailandPrdouctDate(data.ManufactureEmail, data.ProduceDate);
+                     return !productexist;
                  })
-              .WithMessage("{PropertyName} does exist.");
+              .WithMessage("A product with the manufacturer email and production date  already exists."); ;
 
         }
     }

@@ -9,7 +9,7 @@ namespace TP.Application.Contracts.Persistence
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<T> GetAsync(int id);
+        Task<T> GetAsync(object id);
         Task<IReadOnlyList<T>> GetAllAsync(Expression<Func<T, bool>> filter = null);
         Task<bool> ExistByIdAsync(object id);
         Task<T> AddAsync(T entity);
