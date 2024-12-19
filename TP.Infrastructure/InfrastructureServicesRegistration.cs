@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TP.Application;
 using TP.Application.Contracts.Infrastructure.AccountSerivce;
+using TP.Application.Contracts.Infrastructure.CaptchaService;
 using TP.Application.Contracts.Persistence;
 using TP.Infrastructure.Service;
 
@@ -14,8 +15,10 @@ namespace TP.Infrastructure
     {
         public static IServiceCollection ConfigureInfrastractureServices(this IServiceCollection services, IConfiguration configuration)
         {
-          
-            
+
+            //Add MemoryCache
+            services.AddMemoryCache();
+
             //AddJwtSetting
 
             services.Configure<JWTSetting>(configuration.GetSection("JwtSetting"));
@@ -23,6 +26,7 @@ namespace TP.Infrastructure
             //Add DI
 
             services.AddScoped(typeof(IAuthService), typeof(AuthService));
+            services.AddScoped(typeof(ICaptchaService), typeof(CaptchaService));
 
 
             //AddAuthentication
