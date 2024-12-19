@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "GJGmDZhnP77segCHb42ci8G2OTfNkM82vgQCvgWK5pw=",
+  "Hash": "Szg24J9zYDJWjwGfuV8NCR1IJSpHcXmyfTyFXmwd3qU=",
   "Source": "TestProject.Api",
   "BasePath": "_content/TestProject.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

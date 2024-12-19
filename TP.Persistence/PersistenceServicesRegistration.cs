@@ -15,8 +15,13 @@ namespace TP.Persistence
 
             //Add DbContext
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("TestProjectConnectionString")));
+       services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(
+        configuration.GetConnectionString("TestProjectConnectionString"),
+        sqlOptions => sqlOptions.EnableRetryOnFailure()
+    )
+);
+
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()

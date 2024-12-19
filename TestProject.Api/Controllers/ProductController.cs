@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using TP.Application;
 using TP.Application.ApplicationExtention.UserExtention;
 using TP.Application.Dtos.ProductDtos;
+using TP.Application.Features.Products.Handlers.Queries;
 using TP.Application.Features.Products.Requests.Commands;
 using TP.Application.Features.Products.Requests.Queries;
 using TP.Application.Responses;
@@ -25,9 +26,15 @@ namespace TestProject.Api.Controllers
 
 
         [HttpGet("/GetAllProductWithFilter")]
-        public async Task<ActionResult<IReadOnlyList<ProductDto>>> Get(string? ownerId)
+        public async Task<ActionResult<RequestResponse<IReadOnlyList<ProductDto>>>> Get(string? ownerId)
         {
             var response = await _mediator.Send(new GetAllProductWithFilterRequest() { CreateBy=ownerId});
+
+            if (response.StatusCode == "404")
+            {
+                return NotFound();
+            }
+
             return Ok(response);
 
         }

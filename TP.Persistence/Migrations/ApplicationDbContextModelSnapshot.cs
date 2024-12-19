@@ -258,7 +258,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "a88fe82a-c55a-42ca-b390-ad5337bdb23b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "588e2d84-7153-464b-b651-bf0fbc4124be",
+                            ConcurrencyStamp = "3b8ba900-7d36-4e72-af12-e269aa8b45d6",
                             Email = "Admin@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "Admin",
@@ -266,9 +266,9 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIOwOyb/KDiyIl/GzL63HAqRL8b3Mpf5cunymCcc9pCeBL5spmmOFBpUoDIDWJVQSQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBHU9hm4xhJnhrri8Ww5BjZagaZx8i/iq0OcvmkMS3NNZ1zYW242gHflJYGZwUcJwQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "99d0cdd5-0a9a-4f68-a9c1-033bbfb66e45",
+                            SecurityStamp = "4851bfc6-8bc5-4617-8275-1d3dee5a246a",
                             TwoFactorEnabled = false,
                             UserName = "Admin@localhost.com"
                         },
@@ -276,7 +276,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "80d5b3db-6a01-4dcb-98d0-23f4d5e36b41",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "127f72c6-d3cf-4a1a-aefa-e4135021a544",
+                            ConcurrencyStamp = "b9446909-caa1-4e19-9980-e1c8d96d12e7",
                             Email = "User@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "System",
@@ -284,9 +284,9 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEH7yeHDbZz+Es2NSld/uOAbR2ilCH+Jj43i6UmR3RV48N9v4KtAwupdMlcvKezP0yg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKlS2gy4zhksfZ+GcVTTcmg1IQICZzS2oWKMNuN/dgbe3OXZgt3T4KHwsFREfrM4gA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "01c359fd-8132-458d-aae2-dde978977dba",
+                            SecurityStamp = "450bb883-36db-4a70-9385-aa44cece5f2b",
                             TwoFactorEnabled = false,
                             UserName = "User@localhost.com"
                         });
@@ -354,7 +354,7 @@ namespace TP.Persistence.Migrations
                             ManufactureEmail = "maedeh.shahcheraghi1384@gmail.com",
                             ManufacturePhone = "09925772866",
                             Name = "Product 1",
-                            ProduceDate = new DateTime(2024, 11, 22, 23, 56, 35, 407, DateTimeKind.Local).AddTicks(5112)
+                            ProduceDate = new DateTime(2024, 12, 18, 15, 19, 37, 718, DateTimeKind.Local).AddTicks(874)
                         },
                         new
                         {
@@ -366,7 +366,7 @@ namespace TP.Persistence.Migrations
                             ManufactureEmail = "maedeh.shahcheraghi2005@gmail.com",
                             ManufacturePhone = "09925772867",
                             Name = "Product 2",
-                            ProduceDate = new DateTime(2024, 11, 22, 23, 56, 35, 407, DateTimeKind.Local).AddTicks(5128)
+                            ProduceDate = new DateTime(2024, 12, 18, 15, 19, 37, 718, DateTimeKind.Local).AddTicks(888)
                         });
                 });
 

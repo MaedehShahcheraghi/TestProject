@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # ASP.NET Core Web API Service
+  api:
+    image: testprojectapi:dev
+    build:
+      context: .
+      dockerfile: ./TestProject.Api/Dockerfile
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080;https://+:8081
+    networks:
+      - app-network
+
+# Networks to connect the services
+networks:
+  app-network:
+    driver: bridge

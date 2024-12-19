@@ -9,6 +9,7 @@
         public bool IsAvailable { get; set; }
 
         #region Relation
+
         public ApplicationUser ApplicationUser { get; set; }
 
         #endregion

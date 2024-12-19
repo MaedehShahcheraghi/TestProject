@@ -6,6 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080);  // فقط HTTP
+});
+
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.ConfigurePersistenceServices(builder.Configuration);
@@ -25,6 +32,8 @@ builder.Services.AddCors(o =>
     .AllowAnyHeader()
     );
 });
+
+
 
 var app = builder.Build();
 

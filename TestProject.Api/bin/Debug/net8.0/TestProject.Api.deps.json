@@ -1250,7 +1250,10 @@
           "TP.Domain": "1.0.0"
         },
         "runtime": {
-          "TP.Application.dll": {}
+          "TP.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "TP.Domain/1.0.0": {
@@ -1262,7 +1265,10 @@
           "System.IdentityModel.Tokens.Jwt": "8.2.1"
         },
         "runtime": {
-          "TP.Domain.dll": {}
+          "TP.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "TP.Infrastructure/1.0.0": {
@@ -1271,7 +1277,10 @@
           "TP.Application": "1.0.0"
         },
         "runtime": {
-          "TP.Infrastructure.dll": {}
+          "TP.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "TP.Persistence/1.0.0": {
@@ -1281,7 +1290,10 @@
           "TP.Application": "1.0.0"
         },
         "runtime": {
-          "TP.Persistence.dll": {}
+          "TP.Persistence.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
