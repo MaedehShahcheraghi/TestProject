@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Caching.Memory;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,8 +48,9 @@ namespace TP.Infrastructure.Service
                     CaptchaStatus = (CaptchaStatus)200,
                     CaptchaCode = captchaCode,
                     CaptchaId = captchaId,
+                    ExpiryTime = DateTime.UtcNow.AddMinutes(expireTime)
 
-                };
+                 };
                 return response;    
             }
             catch (Exception)
@@ -59,9 +62,33 @@ namespace TP.Infrastructure.Service
         }
 
 
-        public Task<CaptchaStatus> ValidateCaptchaAsync(CaptchaValidationRequest captcha)
+        public CaptchaStatus ValidateCaptcha(CaptchaValidationRequest captcha)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var cacheKey = $"{CaptchaConstant.CaptchaKeyP}{captcha.CaptchaId}";
+
+                if (_memoryCache.TryGetValue(cacheKey, out string storedHashedCaptcha))
+                {
+
+                    var hashedInput = HashCaptchaCode(captcha.CaptchaCode, CaptchaConstant.SecretKey);
+                    if (storedHashedCaptcha == hashedInput)
+                    {
+                        _memoryCache.Remove(cacheKey);
+                        return CaptchaStatus.Ok;
+                    }
+
+                    return CaptchaStatus.UnprocessableEntity;
+                }
+                return CaptchaStatus.Gone;
+            }
+            catch (Exception)
+            {
+
+                return CaptchaStatus.BadRequest;
+            
+            }
+
         }
 
         #region Utitlity

@@ -15,7 +15,9 @@ namespace TestProject.Api.Controllers
         {
             this.authService = authService;
         }
+        [ServiceFilter(typeof(ValidateCaptchaAttribute))]
         [HttpPost("login")]
+
         public async Task<ActionResult<AuthResponse>> Login(AuthRequest request)
         {
             var response=await authService.Login(request);

@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using TestProject.Api.OpenApiConfig;
 using TP.Application;
 using TP.Infrastructure;
 using TP.Persistence;
@@ -18,7 +19,7 @@ builder.Services.AddControllers();
 builder.Services.ConfigurePersistenceServices(builder.Configuration);
 builder.Services.ConfigureApplicationServices();
 builder.Services.ConfigureInfrastractureServices(builder.Configuration);
-
+builder.Services.AddScoped<ValidateCaptchaAttribute>();
 
 builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();
@@ -88,6 +89,8 @@ void AddSwagger(IServiceCollection services)
                 new List<string>()
             }
         });
+
+        o.OperationFilter<AddCaptchaIdHeaderParameter>();
 
         o.SwaggerDoc("v1", new OpenApiInfo()
         {

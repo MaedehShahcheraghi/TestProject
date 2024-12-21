@@ -10,6 +10,7 @@ namespace TP.Application.Models.Captcha
     {
         public string CaptchaId { get; set; }
         public string CaptchaCode { get; set; }
+        public DateTime ExpiryTime { get; set; }
         public CaptchaStatus CaptchaStatus { get; set; }
     }
 }

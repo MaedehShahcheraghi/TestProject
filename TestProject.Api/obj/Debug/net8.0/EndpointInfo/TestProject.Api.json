@@ -10,6 +10,17 @@
         "tags": [
           "Account"
         ],
+        "parameters": [
+          {
+            "name": "CaptchaId",
+            "in": "header",
+            "description": "The ID of the captcha generated from the generateCaptcha endpoint",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -346,6 +357,10 @@
             "nullable": true
           },
           "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "captchaCode": {
             "type": "string",
             "nullable": true
           }

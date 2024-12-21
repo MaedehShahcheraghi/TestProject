@@ -15,12 +15,12 @@ namespace TP.Persistence
 
             //Add DbContext
 
-       services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(
-        configuration.GetConnectionString("TestProjectConnectionString"),
-        sqlOptions => sqlOptions.EnableRetryOnFailure()
-    )
-);
+            services.AddDbContext<ApplicationDbContext>(options =>
+         options.UseSqlServer(
+             configuration.GetConnectionString("TestProjectConnectionString"),
+             sqlOptions => sqlOptions.EnableRetryOnFailure()
+         )
+     );
 
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -29,7 +29,7 @@ namespace TP.Persistence
 
             //Add DI
 
-            services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 
