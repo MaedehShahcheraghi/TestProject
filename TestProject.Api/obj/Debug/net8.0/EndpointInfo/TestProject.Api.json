@@ -215,6 +215,17 @@
         "tags": [
           "Product"
         ],
+        "parameters": [
+          {
+            "name": "CaptchaId",
+            "in": "header",
+            "description": "The ID of the captcha generated from the generateCaptcha endpoint",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -352,15 +363,15 @@
       "AuthRequest": {
         "type": "object",
         "properties": {
+          "captchaCode": {
+            "type": "string",
+            "nullable": true
+          },
           "email": {
             "type": "string",
             "nullable": true
           },
           "password": {
-            "type": "string",
-            "nullable": true
-          },
-          "captchaCode": {
             "type": "string",
             "nullable": true
           }
@@ -416,6 +427,10 @@
       "CreateProductDto": {
         "type": "object",
         "properties": {
+          "captchaCode": {
+            "type": "string",
+            "nullable": true
+          },
           "name": {
             "type": "string",
             "nullable": true

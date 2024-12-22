@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace TP.Application.Models.Captcha
 {
-    public class CaptchaValidationRequest
+    public class CaptchaValidationRequest:BaseCaptcha
     {
         public string CaptchaId { get; set; }
-        public string CaptchaCode { get; set; }
     }
     public enum CaptchaStatus
     {

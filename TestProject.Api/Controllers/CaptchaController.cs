@@ -23,9 +23,9 @@ namespace TestProject.Api.Controllers
                 case TP.Application.Models.Captcha.CaptchaStatus.Ok:
                     return Ok(result);
                 case TP.Application.Models.Captcha.CaptchaStatus.NotFound:
-                    return NotFound(new { Message = "Captcha not found." });
+                    return NotFound(result);
                 case TP.Application.Models.Captcha.CaptchaStatus.BadRequest:
-                   return BadRequest( new { Message = "request could not be understood by the server" });
+                   return BadRequest( result);
                 default:
                     break;
             }

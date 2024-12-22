@@ -36,13 +36,16 @@ public class ValidateCaptchaAttribute : IAsyncActionFilter
             return;
         }
 
-        if (!context.ActionArguments.TryGetValue("request", out var actionArgument) || actionArgument is not AuthRequest request)
+        var captchaArgument = context.ActionArguments.Values
+           .FirstOrDefault(arg => arg is BaseCaptcha) as BaseCaptcha;
+
+        if (captchaArgument == null || string.IsNullOrEmpty(captchaArgument.CaptchaCode))
         {
             context.Result = new BadRequestObjectResult(new { Message = "CaptchaCode is required in the request body." });
             return;
         }
 
-        var captchaCode = request.CaptchaCode;
+        var captchaCode = captchaArgument.CaptchaCode;
         if (string.IsNullOrEmpty(captchaCode))
         {
             context.Result = new BadRequestObjectResult(new { Message = "CaptchaCode is required in the request body." });
@@ -70,7 +73,7 @@ public class ValidateCaptchaAttribute : IAsyncActionFilter
         switch (result)
         {
             case TP.Application.Models.Captcha.CaptchaStatus.UnprocessableEntity:
-                context.Result = new ObjectResult(new { Message = "Captcha is invalid or malformed." })
+                context.Result = new ObjectResult(new { Message = $"Captcha is invalid or malformed." })
                 {
                     StatusCode = StatusCodes.Status422UnprocessableEntity
                 };

@@ -26,6 +26,20 @@ namespace TestProject.Api.OpenApiConfig
                     }
                 });
             }
+            if (context.ApiDescription.RelativePath.Contains("AddProduct"))
+            {
+                operation.Parameters.Add(new OpenApiParameter
+                {
+                    Name = "CaptchaId",
+                    In = ParameterLocation.Header,
+                    Description = "The ID of the captcha generated from the generateCaptcha endpoint",
+                    Required = true,
+                    Schema = new OpenApiSchema
+                    {
+                        Type = "string"
+                    }
+                });
+            }
         }
     }
 

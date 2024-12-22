@@ -51,10 +51,10 @@ namespace TestProject.Api.Controllers
         }
 
 
-      
+        [ServiceFilter(typeof(ValidateCaptchaAttribute))]
         [HttpPost("/AddProduct")]
         [Authorize]
-        public async Task<ActionResult<BaseCommandResponse>> Post([FromBody] CreateProductDto createProductDto)
+        public async Task<ActionResult<BaseCommandResponse>> Post( [FromBody] CreateProductDto createProductDto)
         {
             if (User.Identity.IsAuthenticated)
             {
