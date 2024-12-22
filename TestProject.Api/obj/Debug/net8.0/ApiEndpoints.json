@@ -78,6 +78,22 @@
     ]
   },
   {
+    "ContainingType": "TestProject.Api.Controllers.CaptchaController",
+    "Method": "GenerateCaptchaCode",
+    "RelativePath": "api/Captcha",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "expireTime",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TestProject.Api.Controllers.ProductController",
     "Method": "Delete",
     "RelativePath": "DeleteProduct/{productId}",

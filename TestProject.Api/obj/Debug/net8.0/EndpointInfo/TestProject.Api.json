@@ -10,6 +10,17 @@
         "tags": [
           "Account"
         ],
+        "parameters": [
+          {
+            "name": "CaptchaId",
+            "in": "header",
+            "description": "The ID of the captcha generated from the generateCaptcha endpoint",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -101,6 +112,28 @@
         }
       }
     },
+    "/api/Captcha": {
+      "post": {
+        "tags": [
+          "Captcha"
+        ],
+        "parameters": [
+          {
+            "name": "expireTime",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/GetAllProductWithFilter": {
       "get": {
         "tags": [
@@ -181,6 +214,17 @@
       "post": {
         "tags": [
           "Product"
+        ],
+        "parameters": [
+          {
+            "name": "CaptchaId",
+            "in": "header",
+            "description": "The ID of the captcha generated from the generateCaptcha endpoint",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -319,6 +363,10 @@
       "AuthRequest": {
         "type": "object",
         "properties": {
+          "captchaCode": {
+            "type": "string",
+            "nullable": true
+          },
           "email": {
             "type": "string",
             "nullable": true
@@ -379,6 +427,10 @@
       "CreateProductDto": {
         "type": "object",
         "properties": {
+          "captchaCode": {
+            "type": "string",
+            "nullable": true
+          },
           "name": {
             "type": "string",
             "nullable": true
