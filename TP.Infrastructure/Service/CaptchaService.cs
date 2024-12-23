@@ -9,22 +9,25 @@ using System.Text;
 using System.Threading.Tasks;
 using TP.Application.Constants;
 using TP.Application.Contracts.Infrastructure.CaptchaService;
+using TP.Application.Contracts.Infrastructure.RedisServices;
 using TP.Application.Models.Captcha;
 
 namespace TP.Infrastructure.Service
 {
     public class CaptchaService : ICaptchaService
     {
-        private readonly IMemoryCache _memoryCache; 
+        private readonly IMemoryCache _memoryCache;
+        private readonly IRedisService redisService;
         private static readonly Random random = new Random();
 
 
-        public CaptchaService(IMemoryCache memoryCache)
+        public CaptchaService(IMemoryCache memoryCache,IRedisService redisService)
         {
             _memoryCache = memoryCache;
+            this.redisService = redisService;
         }
 
-        public CaptchaResponse GenerateCaptcha(int expireTime,int length)
+        public async Task<CaptchaResponse> GenerateCaptcha(int expireTime,int length)
         {
             var response = new CaptchaResponse();
 
@@ -38,11 +41,13 @@ namespace TP.Infrastructure.Service
                 var hashedCaptcha = HashCaptchaCode(captchaCode, CaptchaConstant.SecretKey);
 
                 var cacheKey = $"{CaptchaConstant.CaptchaKeyP}{captchaId}";
-                var cacheOptions = new MemoryCacheEntryOptions()
-                    .SetSlidingExpiration(TimeSpan.FromMinutes(expireTime));
+                //var cacheOptions = new MemoryCacheEntryOptions()
+                //    .SetSlidingExpiration(TimeSpan.FromMinutes(expireTime));
 
-                _memoryCache.Set(cacheKey, hashedCaptcha, cacheOptions);
 
+                //_memoryCache.Set(cacheKey, hashedCaptcha, cacheOptions);
+
+              await redisService.SetStringAsync(cacheKey, hashedCaptcha, TimeSpan.FromMinutes(expireTime));
                  response = new()
                 {
                     CaptchaStatus = (CaptchaStatus)200,
@@ -62,19 +67,19 @@ namespace TP.Infrastructure.Service
         }
 
 
-        public CaptchaStatus ValidateCaptcha(CaptchaValidationRequest captcha)
+        public async Task<CaptchaStatus> ValidateCaptcha(CaptchaValidationRequest captcha)
         {
             try
             {
                 var cacheKey = $"{CaptchaConstant.CaptchaKeyP}{captcha.CaptchaId}";
-
-                if (_memoryCache.TryGetValue(cacheKey, out string storedHashedCaptcha))
+                var storedHashedCaptcha = await redisService.GetStringAsync(cacheKey);
+                if (storedHashedCaptcha != null)
                 {
 
                     var hashedInput = HashCaptchaCode(captcha.CaptchaCode, CaptchaConstant.SecretKey);
                     if (storedHashedCaptcha == hashedInput)
                     {
-                        _memoryCache.Remove(cacheKey);
+                        await redisService.RemoveAsync(cacheKey);
                         return CaptchaStatus.Ok;
                     }
 

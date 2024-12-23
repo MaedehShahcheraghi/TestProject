@@ -338,3 +338,5 @@ E:\Testproject\TestProject.Api\obj\Debug\net8.0\refint\TestProject.Api.dll
 E:\Testproject\TestProject.Api\obj\Debug\net8.0\TestProject.Api.pdb
 E:\Testproject\TestProject.Api\obj\Debug\net8.0\TestProject.Api.genruntimeconfig.cache
 E:\Testproject\TestProject.Api\obj\Debug\net8.0\ref\TestProject.Api.dll
+E:\Testproject\TestProject.Api\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+E:\Testproject\TestProject.Api\bin\Debug\net8.0\StackExchange.Redis.dll

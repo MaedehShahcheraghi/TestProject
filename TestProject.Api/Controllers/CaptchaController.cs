@@ -15,9 +15,9 @@ namespace TestProject.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult GenerateCaptchaCode(int expireTime)
+        public async Task<IActionResult> GenerateCaptchaCode(int expireTime)
         {
-            var result=_captchaService.GenerateCaptcha(expireTime,6);
+            var result=await _captchaService.GenerateCaptcha(expireTime,6);
             switch (result.CaptchaStatus)
             { 
                 case TP.Application.Models.Captcha.CaptchaStatus.Ok:

@@ -9,8 +9,8 @@ namespace TP.Application.Contracts.Infrastructure.CaptchaService
 {
     public interface ICaptchaService
     {
-        CaptchaResponse GenerateCaptcha(int expireTime, int length);
-        public CaptchaStatus ValidateCaptcha(CaptchaValidationRequest captcha);
+        Task<CaptchaResponse> GenerateCaptcha(int expireTime, int length);
+        public Task<CaptchaStatus> ValidateCaptcha(CaptchaValidationRequest captcha);
 
 
     }

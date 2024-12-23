@@ -68,7 +68,7 @@ public class ValidateCaptchaAttribute : IAsyncActionFilter
             return;
         }
 
-        var result = captchaService.ValidateCaptcha(captchaValidationRequest);
+        var result =await captchaService.ValidateCaptcha(captchaValidationRequest);
 
         switch (result)
         {
