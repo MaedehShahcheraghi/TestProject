@@ -19,11 +19,11 @@ namespace TP.Persistence
          options.UseSqlServer(
              configuration.GetConnectionString("TestProjectConnectionString"),
              sqlOptions => sqlOptions.EnableRetryOnFailure()
-         )
-     );
+             )
+            );
 
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 

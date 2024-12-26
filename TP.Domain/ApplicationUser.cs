@@ -13,6 +13,7 @@ namespace TP.Domain
 
         #region Relations
         public ICollection<Product> Products { get; set; }
+        public ICollection<ApplicationRole> ApplicationRoles { get; set; }
         #endregion
     }
 }

@@ -10,6 +10,8 @@ namespace TP.Application.Contracts.Infrastructure.AccountSerivce
     {
         Task<AuthResponse> Login(AuthRequest request);
         Task<RegisterationResponse> Register(RegisterationRequest request);
+        Task<bool> AssignRole(string userId, string role);
+
 
     }
 }

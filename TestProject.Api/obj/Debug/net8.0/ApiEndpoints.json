@@ -94,6 +94,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TestProject.Api.Controllers.UserController",
+    "Method": "AddUserRole",
+    "RelativePath": "api/User/AddUserRole/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "roleName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TestProject.Api.Controllers.ProductController",
     "Method": "Delete",
     "RelativePath": "DeleteProduct/{productId}",

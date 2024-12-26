@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TP.Application;
 using TP.Application.ApplicationExtention.UserExtention;
+using TP.Application.Constants;
 using TP.Application.Dtos.ProductDtos;
 using TP.Application.Features.Products.Handlers.Queries;
 using TP.Application.Features.Products.Requests.Commands;
@@ -43,11 +44,11 @@ namespace TestProject.Api.Controllers
     
 
         [HttpGet("/GetAllProduct")]
+        [Authorize(Roles = "User,Adminstrator")]
         public async Task<ActionResult<IReadOnlyList<ProductDto>>> Get()
         {
             var response = await _mediator.Send(new GetAllProductRequest());
             return Ok(response);
-
         }
 
 
@@ -71,8 +72,9 @@ namespace TestProject.Api.Controllers
         }
 
      
-        [HttpPut("/EditProduct")]
-        [Authorize]
+        [HttpPut("/EditProduct")]  
+        [Authorize(Policy =CustomPloicy.AccessToEditProducts)]
+     
         public async Task<ActionResult<BaseCommandResponse>> Put([FromBody] EditProductDto editProductDto)
         {
             if (User.Identity.IsAuthenticated)
@@ -92,7 +94,7 @@ namespace TestProject.Api.Controllers
 
 
         [HttpDelete("/DeleteProduct/{productId}")]
-        [Authorize]
+        [Authorize(Policy = CustomPloicy.AccessToDeleteProducts)]
         public async Task<ActionResult<BaseCommandResponse>> Delete(int productId)
         {
             if (User.Identity.IsAuthenticated)

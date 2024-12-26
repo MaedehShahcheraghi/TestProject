@@ -3,92 +3,40 @@
   "WorkspaceRootPath": "E:\\Testproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|e:\\testproject\\tp.infrastructure\\service\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|solutionrelative:tp.infrastructure\\service\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\contracts\\infrastructure\\redisservices\\iredisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\contracts\\infrastructure\\redisservices\\iredisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\attributefilter\\validatecaptchaattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\attributefilter\\validatecaptchaattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\contracts\\infrastructure\\captchaservice\\icaptchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\contracts\\infrastructure\\captchaservice\\icaptchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|e:\\testproject\\tp.infrastructure\\service\\captchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|solutionrelative:tp.infrastructure\\service\\captchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\controllers\\captchacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\controllers\\captchacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|e:\\testproject\\tp.infrastructure\\infrastructureservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|solutionrelative:tp.infrastructure\\infrastructureservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\models\\redis\\redissertting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\models\\redis\\redissertting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\configureapplicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\configureapplicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\dtos\\productdtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\dtos\\productdtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\openapiconfig\\addcaptchaidheaderparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\openapiconfig\\addcaptchaidheaderparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\models\\captcha\\basecaptcha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\models\\captcha\\basecaptcha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\models\\captcha\\captcharesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\models\\captcha\\captcharesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\models\\captcha\\captchavalidationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\models\\captcha\\captchavalidationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|e:\\testproject\\tp.infrastructure\\policies\\authorizationpolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|solutionrelative:tp.infrastructure\\policies\\authorizationpolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|e:\\testproject\\tp.infrastructure\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|solutionrelative:tp.infrastructure\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\models\\identity\\authrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\models\\identity\\authrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\constants\\captchaconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\constants\\captchaconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|e:\\testproject\\tp.infrastructure\\service\\captchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A3FA1D-0D6A-41CA-914E-87AEBBF4E2EB}|TP.Infrastructure\\TP.Infrastructure.csproj|solutionrelative:tp.infrastructure\\service\\captchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\testproject.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\testproject.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\attributefilter\\validatecaptchaattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\attributefilter\\validatecaptchaattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|e:\\testproject\\tp.persistence\\configurations\\entitiesconfiguration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BF54118-18D7-4C93-ACB1-07480DC97D60}|TP.Persistence\\TP.Persistence.csproj|solutionrelative:tp.persistence\\configurations\\entitiesconfiguration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|e:\\testproject\\tp.application\\contracts\\infrastructure\\accountserivce\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D86A81-FA40-4B21-B349-6C9F31FE7C9C}|TP.Application\\TP.Application.csproj|solutionrelative:tp.application\\contracts\\infrastructure\\accountserivce\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|e:\\testproject\\testproject.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C783E16-19F6-4FC1-9F5F-2D95EB3C545A}|TestProject.Api\\TestProject.Api.csproj|solutionrelative:testproject.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,300 +46,127 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1337924956:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "TestProject.Api\\appsettings.json",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\appsettings.json",
-              "RelativeToolTip": "TestProject.Api\\appsettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-23T17:53:46.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RedisService.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Infrastructure\\Service\\RedisService.cs",
-              "RelativeDocumentMoniker": "TP.Infrastructure\\Service\\RedisService.cs",
-              "ToolTip": "E:\\Testproject\\TP.Infrastructure\\Service\\RedisService.cs",
-              "RelativeToolTip": "TP.Infrastructure\\Service\\RedisService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "E:\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "ToolTip": "E:\\Testproject\\TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "RelativeToolTip": "TP.Persistence\\Configurations\\EntitiesConfiguration\\UserConfiguration.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T16:38:46.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IRedisService.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Contracts\\Infrastructure\\RedisServices\\IRedisService.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Contracts\\Infrastructure\\RedisServices\\IRedisService.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Contracts\\Infrastructure\\RedisServices\\IRedisService.cs",
-              "RelativeToolTip": "TP.Application\\Contracts\\Infrastructure\\RedisServices\\IRedisService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T16:06:13.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RedisSertting.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Models\\Redis\\RedisSertting.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Models\\Redis\\RedisSertting.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Models\\Redis\\RedisSertting.cs",
-              "RelativeToolTip": "TP.Application\\Models\\Redis\\RedisSertting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T15:52:41.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateProductDto.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Dtos\\ProductDtos\\CreateProductDto.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Dtos\\ProductDtos\\CreateProductDto.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Dtos\\ProductDtos\\CreateProductDto.cs",
-              "RelativeToolTip": "TP.Application\\Dtos\\ProductDtos\\CreateProductDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T16:38:04.162Z",
+              "WhenOpened": "2024-12-26T10:00:55.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "TestProject.Api\\Controllers\\ProductController.cs",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "TestProject.Api\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAA+wDUAAAA5AAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TestProject.Api\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Testproject\\TestProject.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TestProject.Api\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T16:32:51.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BaseCaptcha.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Models\\Captcha\\BaseCaptcha.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Models\\Captcha\\BaseCaptcha.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Models\\Captcha\\BaseCaptcha.cs",
-              "RelativeToolTip": "TP.Application\\Models\\Captcha\\BaseCaptcha.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T16:23:41.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AddCaptchaIdHeaderParameter.cs",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\OpenApiConfig\\AddCaptchaIdHeaderParameter.cs",
-              "RelativeDocumentMoniker": "TestProject.Api\\OpenApiConfig\\AddCaptchaIdHeaderParameter.cs",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\OpenApiConfig\\AddCaptchaIdHeaderParameter.cs",
-              "RelativeToolTip": "TestProject.Api\\OpenApiConfig\\AddCaptchaIdHeaderParameter.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwCkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:29:19.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Infrastructure\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "TP.Infrastructure\\Service\\AuthService.cs",
-              "ToolTip": "E:\\Testproject\\TP.Infrastructure\\Service\\AuthService.cs",
-              "RelativeToolTip": "TP.Infrastructure\\Service\\AuthService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAWwEIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:15:15.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AuthRequest.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Models\\Identity\\AuthRequest.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Models\\Identity\\AuthRequest.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Models\\Identity\\AuthRequest.cs",
-              "RelativeToolTip": "TP.Application\\Models\\Identity\\AuthRequest.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:44:34.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "TestProject.Api\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "TestProject.Api\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:37:59.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ConfigureApplicationServices.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\ConfigureApplicationServices.cs",
-              "RelativeDocumentMoniker": "TP.Application\\ConfigureApplicationServices.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\ConfigureApplicationServices.cs",
-              "RelativeToolTip": "TP.Application\\ConfigureApplicationServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:36:23.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ValidateCaptchaAttribute.cs",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
-              "RelativeDocumentMoniker": "TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
-              "RelativeToolTip": "TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAYwEgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T08:10:35.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TestProject.Api.csproj",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\TestProject.Api.csproj",
-              "RelativeDocumentMoniker": "TestProject.Api\\TestProject.Api.csproj",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\TestProject.Api.csproj",
-              "RelativeToolTip": "TestProject.Api\\TestProject.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-21T08:04:16.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\Program.cs",
-              "RelativeDocumentMoniker": "TestProject.Api\\Program.cs",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\Program.cs",
-              "RelativeToolTip": "TestProject.Api\\Program.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFwAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T08:02:12.386Z",
+              "WhenOpened": "2024-12-26T09:48:26.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CaptchaController.cs",
-              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\Controllers\\CaptchaController.cs",
-              "RelativeDocumentMoniker": "TestProject.Api\\Controllers\\CaptchaController.cs",
-              "ToolTip": "E:\\Testproject\\TestProject.Api\\Controllers\\CaptchaController.cs",
-              "RelativeToolTip": "TestProject.Api\\Controllers\\CaptchaController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Contracts\\Infrastructure\\AccountSerivce\\IAuthService.cs",
+              "RelativeDocumentMoniker": "TP.Application\\Contracts\\Infrastructure\\AccountSerivce\\IAuthService.cs",
+              "ToolTip": "E:\\Testproject\\TP.Application\\Contracts\\Infrastructure\\AccountSerivce\\IAuthService.cs",
+              "RelativeToolTip": "TP.Application\\Contracts\\Infrastructure\\AccountSerivce\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T11:02:49.328Z",
+              "WhenOpened": "2024-12-26T09:43:27.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InfrastructureServicesRegistration.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "RelativeDocumentMoniker": "TP.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "ToolTip": "E:\\Testproject\\TP.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "RelativeToolTip": "TP.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAxwCUAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AuthorizationPolicies.cs",
+              "DocumentMoniker": "E:\\Testproject\\TP.Infrastructure\\Policies\\AuthorizationPolicies.cs",
+              "RelativeDocumentMoniker": "TP.Infrastructure\\Policies\\AuthorizationPolicies.cs",
+              "ToolTip": "E:\\Testproject\\TP.Infrastructure\\Policies\\AuthorizationPolicies.cs",
+              "RelativeToolTip": "TP.Infrastructure\\Policies\\AuthorizationPolicies.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwCoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T10:07:58.31Z",
+              "WhenOpened": "2024-12-26T09:19:04.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CaptchaResponse.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Models\\Captcha\\CaptchaResponse.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Models\\Captcha\\CaptchaResponse.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Models\\Captcha\\CaptchaResponse.cs",
-              "RelativeToolTip": "TP.Application\\Models\\Captcha\\CaptchaResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\Testproject\\TP.Infrastructure\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "TP.Infrastructure\\Service\\AuthService.cs",
+              "ToolTip": "E:\\Testproject\\TP.Infrastructure\\Service\\AuthService.cs",
+              "RelativeToolTip": "TP.Infrastructure\\Service\\AuthService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwEMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T10:01:23.404Z",
+              "WhenOpened": "2024-12-26T08:31:03.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CaptchaConstant.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Constants\\CaptchaConstant.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Constants\\CaptchaConstant.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Constants\\CaptchaConstant.cs",
-              "RelativeToolTip": "TP.Application\\Constants\\CaptchaConstant.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAsAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TestProject.Api\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\Testproject\\TestProject.Api\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TestProject.Api\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T09:34:13.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CaptchaValidationRequest.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Models\\Captcha\\CaptchaValidationRequest.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Models\\Captcha\\CaptchaValidationRequest.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Models\\Captcha\\CaptchaValidationRequest.cs",
-              "RelativeToolTip": "TP.Application\\Models\\Captcha\\CaptchaValidationRequest.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAIBJwBcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T09:30:46.577Z",
+              "WhenOpened": "2024-12-26T08:31:03.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CaptchaService.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Infrastructure\\Service\\CaptchaService.cs",
-              "RelativeDocumentMoniker": "TP.Infrastructure\\Service\\CaptchaService.cs",
-              "ToolTip": "E:\\Testproject\\TP.Infrastructure\\Service\\CaptchaService.cs",
-              "RelativeToolTip": "TP.Infrastructure\\Service\\CaptchaService.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEUAAAAVAAAAAAAAAA==",
+              "Title": "ValidateCaptchaAttribute.cs",
+              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
+              "RelativeDocumentMoniker": "TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
+              "ToolTip": "E:\\Testproject\\TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
+              "RelativeToolTip": "TestProject.Api\\AttributeFilter\\ValidateCaptchaAttribute.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T09:26:04.87Z",
+              "WhenOpened": "2024-12-26T08:31:03.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ICaptchaService.cs",
-              "DocumentMoniker": "E:\\Testproject\\TP.Application\\Contracts\\Infrastructure\\CaptchaService\\ICaptchaService.cs",
-              "RelativeDocumentMoniker": "TP.Application\\Contracts\\Infrastructure\\CaptchaService\\ICaptchaService.cs",
-              "ToolTip": "E:\\Testproject\\TP.Application\\Contracts\\Infrastructure\\CaptchaService\\ICaptchaService.cs",
-              "RelativeToolTip": "TP.Application\\Contracts\\Infrastructure\\CaptchaService\\ICaptchaService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAArwBEAAAAAAAAAAAAAAA==",
+              "Title": "CaptchaService.cs",
+              "DocumentMoniker": "E:\\Testproject\\TP.Infrastructure\\Service\\CaptchaService.cs",
+              "RelativeDocumentMoniker": "TP.Infrastructure\\Service\\CaptchaService.cs",
+              "ToolTip": "E:\\Testproject\\TP.Infrastructure\\Service\\CaptchaService.cs",
+              "RelativeToolTip": "TP.Infrastructure\\Service\\CaptchaService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T09:25:08.438Z",
+              "WhenOpened": "2024-12-26T08:31:03.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\Testproject\\TestProject.Api\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "TestProject.Api\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\Testproject\\TestProject.Api\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "TestProject.Api\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAGAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T08:28:55.615Z",
               "EditorCaption": ""
             }
           ]

@@ -22,47 +22,6 @@ namespace TP.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
-
-                    b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "f7c5524f-719a-4239-a167-4a61c4bcff01",
-                            Name = "User",
-                            NormalizedName = "USER"
-                        },
-                        new
-                        {
-                            Id = "d43a6151-9461-4433-94fa-0b1170ee9f8d",
-                            Name = "Adminstrator",
-                            NormalizedName = "ADMINSTRATOR"
-                        });
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.Property<int>("Id")
@@ -181,6 +140,58 @@ namespace TP.Persistence.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("TP.Domain.ApplicationRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "f7c5524f-719a-4239-a167-4a61c4bcff01",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        },
+                        new
+                        {
+                            Id = "d43a6151-9461-4433-94fa-0b1170ee9f8d",
+                            Name = "Adminstrator",
+                            NormalizedName = "ADMINSTRATOR"
+                        },
+                        new
+                        {
+                            Id = "d78a6151-9456-4433-93fa-0b1170ee9f8d",
+                            Name = "Guest",
+                            NormalizedName = "GUEST"
+                        });
+                });
+
             modelBuilder.Entity("TP.Domain.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -258,7 +269,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "a88fe82a-c55a-42ca-b390-ad5337bdb23b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3b8ba900-7d36-4e72-af12-e269aa8b45d6",
+                            ConcurrencyStamp = "73e5a0af-0c71-4a5c-80d5-517f3a185345",
                             Email = "Admin@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "Admin",
@@ -266,9 +277,9 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBHU9hm4xhJnhrri8Ww5BjZagaZx8i/iq0OcvmkMS3NNZ1zYW242gHflJYGZwUcJwQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGagoLPU9gM5RRzOpUfN2hTuaKfsHuB+jAYD+aloiOxAOGaaGR1/f0YCB30KRBzx2g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4851bfc6-8bc5-4617-8275-1d3dee5a246a",
+                            SecurityStamp = "1243d85c-b5e5-49e8-8a40-461cd96e0481",
                             TwoFactorEnabled = false,
                             UserName = "Admin@localhost.com"
                         },
@@ -276,7 +287,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "80d5b3db-6a01-4dcb-98d0-23f4d5e36b41",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b9446909-caa1-4e19-9980-e1c8d96d12e7",
+                            ConcurrencyStamp = "ac6fdd6e-99c6-4da3-9402-f9f8286c911e",
                             Email = "User@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "System",
@@ -284,12 +295,31 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKlS2gy4zhksfZ+GcVTTcmg1IQICZzS2oWKMNuN/dgbe3OXZgt3T4KHwsFREfrM4gA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBREgWlcY+REfOmqLGnqGuFanzxwK0u62C4OhSBV/cqR5O4CuD/OWArfIFWLy+B+4w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "450bb883-36db-4a70-9385-aa44cece5f2b",
+                            SecurityStamp = "8f15776e-ecfa-4d7a-9a42-c3aa230642a0",
                             TwoFactorEnabled = false,
                             UserName = "User@localhost.com"
                         });
+                });
+
+            modelBuilder.Entity("TP.Domain.Permission", b =>
+                {
+                    b.Property<string>("PermissionId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ParentId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("PermissionTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PermissionId");
+
+                    b.HasIndex("ParentId");
+
+                    b.ToTable("Permission");
                 });
 
             modelBuilder.Entity("TP.Domain.Product", b =>
@@ -354,7 +384,7 @@ namespace TP.Persistence.Migrations
                             ManufactureEmail = "maedeh.shahcheraghi1384@gmail.com",
                             ManufacturePhone = "09925772866",
                             Name = "Product 1",
-                            ProduceDate = new DateTime(2024, 12, 18, 15, 19, 37, 718, DateTimeKind.Local).AddTicks(874)
+                            ProduceDate = new DateTime(2024, 12, 26, 11, 56, 26, 586, DateTimeKind.Local).AddTicks(2456)
                         },
                         new
                         {
@@ -366,13 +396,28 @@ namespace TP.Persistence.Migrations
                             ManufactureEmail = "maedeh.shahcheraghi2005@gmail.com",
                             ManufacturePhone = "09925772867",
                             Name = "Product 2",
-                            ProduceDate = new DateTime(2024, 12, 18, 15, 19, 37, 718, DateTimeKind.Local).AddTicks(888)
+                            ProduceDate = new DateTime(2024, 12, 26, 11, 56, 26, 586, DateTimeKind.Local).AddTicks(2470)
                         });
+                });
+
+            modelBuilder.Entity("TP.Domain.RolePermission", b =>
+                {
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("PermssionId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("RoleId", "PermssionId");
+
+                    b.HasIndex("PermssionId");
+
+                    b.ToTable("RolePermission");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("TP.Domain.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -399,7 +444,7 @@ namespace TP.Persistence.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("TP.Domain.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -421,6 +466,20 @@ namespace TP.Persistence.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("TP.Domain.ApplicationRole", b =>
+                {
+                    b.HasOne("TP.Domain.ApplicationUser", null)
+                        .WithMany("ApplicationRoles")
+                        .HasForeignKey("ApplicationUserId");
+                });
+
+            modelBuilder.Entity("TP.Domain.Permission", b =>
+                {
+                    b.HasOne("TP.Domain.Permission", null)
+                        .WithMany("Permissions")
+                        .HasForeignKey("ParentId");
+                });
+
             modelBuilder.Entity("TP.Domain.Product", b =>
                 {
                     b.HasOne("TP.Domain.ApplicationUser", "ApplicationUser")
@@ -432,9 +491,42 @@ namespace TP.Persistence.Migrations
                     b.Navigation("ApplicationUser");
                 });
 
+            modelBuilder.Entity("TP.Domain.RolePermission", b =>
+                {
+                    b.HasOne("TP.Domain.Permission", "Permission")
+                        .WithMany("RolePermissions")
+                        .HasForeignKey("PermssionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TP.Domain.ApplicationRole", "ApplicationRole")
+                        .WithMany("RolePermissions")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationRole");
+
+                    b.Navigation("Permission");
+                });
+
+            modelBuilder.Entity("TP.Domain.ApplicationRole", b =>
+                {
+                    b.Navigation("RolePermissions");
+                });
+
             modelBuilder.Entity("TP.Domain.ApplicationUser", b =>
                 {
+                    b.Navigation("ApplicationRoles");
+
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("TP.Domain.Permission", b =>
+                {
+                    b.Navigation("Permissions");
+
+                    b.Navigation("RolePermissions");
                 });
 #pragma warning restore 612, 618
         }

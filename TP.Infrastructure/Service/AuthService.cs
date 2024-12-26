@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -16,7 +17,7 @@ namespace TP.Infrastructure.Service
         private readonly JWTSetting options;
         private readonly SignInManager<ApplicationUser> signInManager;
 
-        public AuthService(UserManager<ApplicationUser> userManager,IOptions<JWTSetting> options,
+        public AuthService(UserManager<ApplicationUser> userManager, IOptions<JWTSetting> options,
             SignInManager<ApplicationUser> signInManager)
         {
             this.userManager = userManager;
@@ -37,7 +38,7 @@ namespace TP.Infrastructure.Service
             {
                 throw new Exception($"the Email {request.Email} alreay exsit");
             }
-           
+
             var user = new ApplicationUser()
             {
                 Id = Guid.NewGuid().ToString(),
@@ -49,7 +50,7 @@ namespace TP.Infrastructure.Service
             var result = await userManager.CreateAsync(user, request.Password);
             if (result.Succeeded)
             {
-                await userManager.AddToRoleAsync(user, "Adminstrator");
+                await AssignRole(user.Id, "Guest");
                 return new RegisterationResponse()
                 {
                     UserId = user.Id
@@ -66,11 +67,13 @@ namespace TP.Infrastructure.Service
         public async Task<AuthResponse> Login(AuthRequest request)
         {
             var user = await userManager.FindByEmailAsync(request.Email);
-            if (user == null) {
+            if (user == null)
+            {
                 throw new Exception($"the user with {request.Email} not found.");
             }
-            var result=await signInManager.PasswordSignInAsync(user.UserName, request.Password,false,false);
-            if (!result.Succeeded) { 
+            var result = await signInManager.PasswordSignInAsync(user.UserName, request.Password, false, false);
+            if (!result.Succeeded)
+            {
                 throw new Exception($"Credentials for the {user.UserName} is not valid.");
             }
             var jwttoken = await GenerateToken(user);
@@ -86,12 +89,27 @@ namespace TP.Infrastructure.Service
 
         }
         #endregion
+        public async Task<bool> AssignRole(string userId, string role)
+        {
 
+            var user = await userManager.FindByIdAsync(userId);
+            if (user == null) {return false;}   
+            await userManager.AddToRoleAsync(user, role);
+            return true;
+       
+        }
         #region Utilites
         private async Task<JwtSecurityToken> GenerateToken(ApplicationUser user)
         {
-            var Userclaims=await userManager.GetClaimsAsync(user);
-           
+            var Userclaims = await userManager.GetClaimsAsync(user);
+
+            var roles = await userManager.GetRolesAsync(user);
+            var Roleclaims = new List<Claim>();
+            for (int i = 0; i < roles.Count; i++)
+            {
+                Roleclaims.Add(new Claim(ClaimTypes.Role, roles[i]));
+            }
+
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub,user.UserName),
@@ -99,10 +117,11 @@ namespace TP.Infrastructure.Service
                 new Claim(JwtRegisteredClaimNames.Email,user.Email),
                 new Claim(CustomClaimTypes.Uid,user.Id),
 
-            }.Union(Userclaims);
 
-            var symmetricSecurityKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(options.Key));
-            var signinCredentials=new SigningCredentials(symmetricSecurityKey,SecurityAlgorithms.HmacSha256);
+            }.Union(Userclaims).Union(Roleclaims);
+
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(options.Key));
+            var signinCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
             var JwtSecurityToken = new JwtSecurityToken(
                 issuer: options.Issuer,
                 audience: options.Audience,
@@ -113,6 +132,8 @@ namespace TP.Infrastructure.Service
             return JwtSecurityToken;
 
         }
+
+
         #endregion
     }
 }

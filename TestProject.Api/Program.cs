@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using TestProject.Api.OpenApiConfig;
 using TP.Application;
 using TP.Infrastructure;
@@ -44,6 +45,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStatusCodePages(context =>
+{
+    if (context.HttpContext.Response.StatusCode == StatusCodes.Status403Forbidden)
+    {
+        context.HttpContext.Response.ContentType = "application/json";
+        return context.HttpContext.Response.WriteAsync(JsonConvert.SerializeObject(new { message = "You don't have permission to access this resource." }));
+    }
+
+    return Task.CompletedTask;
+});
+
 app.UseAuthentication();
 
 app.UseHttpsRedirection();

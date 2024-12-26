@@ -11,6 +11,7 @@ using TP.Application.Contracts.Infrastructure.CaptchaService;
 using TP.Application.Contracts.Infrastructure.RedisServices;
 using TP.Application.Contracts.Persistence;
 using TP.Application.Models.Redis;
+using TP.Infrastructure.Policies;
 using TP.Infrastructure.Service;
 
 namespace TP.Infrastructure
@@ -72,7 +73,10 @@ namespace TP.Infrastructure
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSetting:Key"]))
                 };
             });
-
+            services.AddAuthorization(options =>
+            {
+                AuthorizationPolicies.AddPolicies(options);
+            });
 
             return services;
         }

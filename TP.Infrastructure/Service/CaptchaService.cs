@@ -41,10 +41,9 @@ namespace TP.Infrastructure.Service
                 var hashedCaptcha = HashCaptchaCode(captchaCode, CaptchaConstant.SecretKey);
 
                 var cacheKey = $"{CaptchaConstant.CaptchaKeyP}{captchaId}";
+
                 //var cacheOptions = new MemoryCacheEntryOptions()
-                //    .SetSlidingExpiration(TimeSpan.FromMinutes(expireTime));
-
-
+                //    .SetSlidingExpiration(TimeSpan.FromMinutes(expireTime);
                 //_memoryCache.Set(cacheKey, hashedCaptcha, cacheOptions);
 
               await redisService.SetStringAsync(cacheKey, hashedCaptcha, TimeSpan.FromMinutes(expireTime));
