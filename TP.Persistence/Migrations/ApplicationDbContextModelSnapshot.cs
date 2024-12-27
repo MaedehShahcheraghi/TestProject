@@ -269,7 +269,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "a88fe82a-c55a-42ca-b390-ad5337bdb23b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "73e5a0af-0c71-4a5c-80d5-517f3a185345",
+                            ConcurrencyStamp = "b833bd49-273f-4de7-b4b4-722418c2b75d",
                             Email = "Admin@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "Admin",
@@ -277,9 +277,9 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGagoLPU9gM5RRzOpUfN2hTuaKfsHuB+jAYD+aloiOxAOGaaGR1/f0YCB30KRBzx2g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPY/7IuRFGggzilDaeZoubIHgWVPOnmW07q5MTvdAshF1DVH14UT/PZOQSZuicmJfg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1243d85c-b5e5-49e8-8a40-461cd96e0481",
+                            SecurityStamp = "d013c434-ac7c-4f5a-bfa0-6222543293d8",
                             TwoFactorEnabled = false,
                             UserName = "Admin@localhost.com"
                         },
@@ -287,7 +287,7 @@ namespace TP.Persistence.Migrations
                         {
                             Id = "80d5b3db-6a01-4dcb-98d0-23f4d5e36b41",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ac6fdd6e-99c6-4da3-9402-f9f8286c911e",
+                            ConcurrencyStamp = "35f047d9-274a-4b11-a7be-70d47ee29ea2",
                             Email = "User@localhost.com",
                             EmailConfirmed = false,
                             FirstName = "System",
@@ -295,9 +295,9 @@ namespace TP.Persistence.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBREgWlcY+REfOmqLGnqGuFanzxwK0u62C4OhSBV/cqR5O4CuD/OWArfIFWLy+B+4w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKNr1OkIcLiRQaFA/6Hw/GdOeoauNVIAU77LQE8GTla11ZA7t0owY+e6zdr3sfMJ/Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8f15776e-ecfa-4d7a-9a42-c3aa230642a0",
+                            SecurityStamp = "3179442a-9f02-4d83-b588-31b658818661",
                             TwoFactorEnabled = false,
                             UserName = "User@localhost.com"
                         });
@@ -384,7 +384,7 @@ namespace TP.Persistence.Migrations
                             ManufactureEmail = "maedeh.shahcheraghi1384@gmail.com",
                             ManufacturePhone = "09925772866",
                             Name = "Product 1",
-                            ProduceDate = new DateTime(2024, 12, 26, 11, 56, 26, 586, DateTimeKind.Local).AddTicks(2456)
+                            ProduceDate = new DateTime(2024, 12, 26, 17, 21, 16, 864, DateTimeKind.Local).AddTicks(8268)
                         },
                         new
                         {
@@ -396,7 +396,7 @@ namespace TP.Persistence.Migrations
                             ManufactureEmail = "maedeh.shahcheraghi2005@gmail.com",
                             ManufacturePhone = "09925772867",
                             Name = "Product 2",
-                            ProduceDate = new DateTime(2024, 12, 26, 11, 56, 26, 586, DateTimeKind.Local).AddTicks(2470)
+                            ProduceDate = new DateTime(2024, 12, 26, 17, 21, 16, 864, DateTimeKind.Local).AddTicks(8286)
                         });
                 });
 
@@ -412,7 +412,7 @@ namespace TP.Persistence.Migrations
 
                     b.HasIndex("PermssionId");
 
-                    b.ToTable("RolePermission");
+                    b.ToTable("rolePermissions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

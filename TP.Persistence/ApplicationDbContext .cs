@@ -20,8 +20,14 @@ namespace TP.Persistence
         } 
         #region Product Dbset
         public DbSet<Product> Products { get; set; }
+
         #endregion
-       
+
+        #region Permissions
+        public DbSet<Permission> Permission { get; set; }
+        public DbSet<RolePermission> rolePermissions { get; set; }
+
+        #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);

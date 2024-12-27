@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TestProject.Api.AttributeFilter;
 using TP.Application;
 using TP.Application.ApplicationExtention.UserExtention;
 using TP.Application.Constants;
@@ -54,7 +55,7 @@ namespace TestProject.Api.Controllers
 
         [ServiceFilter(typeof(ValidateCaptchaAttribute))]
         [HttpPost("/AddProduct")]
-        [Authorize]
+        [PermissionChecker(CustomPloicy.AccessToAddProducts)]
         public async Task<ActionResult<BaseCommandResponse>> Post( [FromBody] CreateProductDto createProductDto)
         {
             if (User.Identity.IsAuthenticated)

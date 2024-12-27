@@ -32,6 +32,10 @@ namespace TP.Persistence
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+            services.AddScoped(typeof(IRoleRepository), typeof(RoleRepository));
+            services.AddScoped(typeof(IUserRoleRepository), typeof(UserRoleRepository));
+            services.AddScoped(typeof(IRolePermissionRepository), typeof(RolePermissionRepository));
+            services.AddScoped(typeof(IPermissionRepository), typeof(PermissionRepository));
 
             return services;
         }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TP.Application.ApplicationExtention.UserExtentions;
 using TP.Application.Constants;
 
 namespace TP.Infrastructure.Policies
@@ -25,7 +26,7 @@ namespace TP.Infrastructure.Policies
                       .Build());
 
             options.AddPolicy(CustomPloicy.AccessToReadProducts, policy =>
-                policy.RequireRole("User", "Adminstrator","Guest")
+                policy.RequireRole("User", "Adminstrator", "Guest")
                       .Build());
 
             options.AddPolicy(CustomPloicy.AccessToAddProducts, policy =>
@@ -34,11 +35,21 @@ namespace TP.Infrastructure.Policies
 
             options.AddPolicy(CustomPloicy.AccessToEditProducts, policy =>
                 policy.RequireRole("User", "Adminstrator")
-                      .Build()); 
+                      .Build());
 
             options.AddPolicy(CustomPloicy.AccessToDeleteProducts, policy =>
                 policy.RequireRole("Adminstrator")
                       .Build());
+
+
+            #region Ploicy with Permission
+
+            options.AddPolicy(CustomPloicy.AccessToAddProducts, policy =>
+       policy.RequirePermission(CustomPloicy.AccessToAddProducts));
+
+            options.AddPolicy(CustomPloicy.AccessToManageProducts, policy =>
+                policy.RequirePermission(CustomPloicy.AccessToManageProducts));
+            #endregion
         }
     }
 }
